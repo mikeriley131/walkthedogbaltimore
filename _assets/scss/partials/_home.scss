@@ -12,7 +12,8 @@
   }
 
   h1 {
-    color: $primary;
+    border-bottom: 4px solid $primary;
+    display: inline-block;
     margin-bottom: .25em;
   }
 }
