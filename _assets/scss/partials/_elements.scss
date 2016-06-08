@@ -1,0 +1,40 @@
+/* ===========================================================================
+==== GLOBAL ELEMENTS
+============================================================================== */
+body {
+  background: $background;
+  font-family: $font-stack;
+  padding: 0 .5em;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1;
+}
+
+p {
+
+}
+
+a {
+  color: $primary;
+  border-bottom: 1px dotted $primary;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid $primary;
+  }
+}
+
+a:hover, a:active {
+
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+
+}

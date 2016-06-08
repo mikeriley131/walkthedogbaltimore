@@ -1,0 +1,11 @@
+@import 'partials/fonts'; // Third-party styles for webfonts
+@import 'partials/variables'; // Global variables for fonts, colors, and responsive breakpoints
+@import 'partials/normalize'; // Third-party reset, https://necolas.github.io/normalize.css/
+@import 'partials/boilerplate'; // Third-party reset, https://html5boilerplate.com/ - Modified to suit this site
+@import 'partials/elements'; // Sets global styles for elements for this context, i.e: a "boilerplate" for this project
+@import 'partials/header';
+@import 'partials/home';
+@import 'partials/interior';
+@import 'partials/forms';
+@import 'partials/footer';
+@import 'partials/helpers';

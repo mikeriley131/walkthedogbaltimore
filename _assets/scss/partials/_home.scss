@@ -1,0 +1,18 @@
+/* ===========================================================================
+==== HOME PAGE STYLES
+============================================================================== */
+.column {
+  margin-bottom: 2em;
+  text-align: center;
+  width: 100%;
+
+  @include brk-med {
+    float: left;
+    width: 33.33333%;
+  }
+
+  h1 {
+    color: $primary;
+    margin-bottom: .25em;
+  }
+}

@@ -1,0 +1,56 @@
+/* ===========================================================================
+==== VARIABLES
+============================================================================== */
+
+/* FONTS
+------------------------------------------------------------------------------ */
+$font-stack: Helvetica, Arial, sans-serif;
+
+/* COLORS
+------------------------------------------------------------------------------ */
+$primary: #e888ba;
+// $secondary:
+// $tertiary:
+$background: #ddd;
+
+
+/* WIDTHS
+------------------------------------------------------------------------------ */
+$full: 100%;
+$long: 75%;
+$med-long: 66.666666%;
+$med: 50%;
+$med-short: 33.333333%;
+$short: 25%;
+
+/* RESPONSIVE MEDIA QUERIES
+------------------------------------------------------------------------------ */
+$brk-small-width: 30em;
+$brk-med-width: 45em;
+$brk-large-width: 60em;
+$brk-xlarge-width: 75em;
+
+
+@mixin brk-small {
+  @media screen and (min-width: $brk-small-width) {
+    @content;
+  }
+}
+
+@mixin brk-med {
+  @media screen and (min-width: $brk-med-width) {
+    @content;
+  }
+}
+
+@mixin brk-large {
+  @media screen and (min-width: $brk-large-width) {
+    @content;
+  }
+}
+
+@mixin brk-xlarge {
+  @media screen and (min-width: $brk-xlarge-width) {
+    @content;
+  }
+}
