@@ -3,9 +3,25 @@
 ============================================================================== */
 .header {
   padding: 1em 0;
+  position: relative;
+
+  &:after {
+    content: "";
+    background: $grey;
+    background: url('../images/baltimore-map.jpg') center no-repeat;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
 
   img {
     display: block;
     margin: 0 auto;
+    width: 50%;
+    max-width: 15em;
   }
 }

@@ -1,6 +1,12 @@
 /* ===========================================================================
 ==== HOME PAGE STYLES
 ============================================================================== */
+.main {
+  background: $background;
+  overflow: auto;
+  padding: 1em;
+}
+
 .column {
   margin-bottom: 2em;
   text-align: center;
@@ -12,8 +18,74 @@
   }
 
   h1 {
-    border-bottom: 4px solid $primary;
-    display: inline-block;
-    margin-bottom: .25em;
+    border-bottom: 4px solid #e888ba;
+    margin: 0 auto;
+    margin-bottom: .5em;
+    width: 50%;
+
+    @include brk-small {
+      width: 33%;
+    }
+
+    @include brk-med {
+      width: 75%;
+    }
+
+    @include brk-large {
+      width: 66%;
+    }
+
+    @include brk-xlarge {
+      width: 45%;
+    }
+  }
+}
+
+.cta-link {
+  background: $primary;
+  border: 3px solid $primary;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding: .25em .5em;
+  position: relative;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  transition: border-color 0.3s 0.2s;
+  z-index: 1;
+
+  &:after {
+    background: #fff;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+    width: 0;
+    z-index: -1;
+  }
+
+  &:hover, &:focus, &:active {
+    background: none;
+    border-color: #fff;
+    color: $grey-dark;
+
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.text-link {
+  border-bottom: 1px dotted $primary;
+  color: $primary;
+
+  &:hover {
+    border-bottom: 1px solid $primary;
   }
 }

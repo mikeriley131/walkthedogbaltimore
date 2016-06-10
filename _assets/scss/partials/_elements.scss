@@ -2,9 +2,8 @@
 ==== GLOBAL ELEMENTS
 ============================================================================== */
 body {
-  background: $background;
+  background: $grey;
   font-family: $font-stack;
-  padding: 0 .5em;
 }
 
 h1, h2, h3, h4 {
@@ -16,16 +15,11 @@ p {
 }
 
 a {
-  color: $primary;
-  border-bottom: 1px dotted $primary;
+  color: #222;
   text-decoration: none;
-
-  &:hover {
-    border-bottom: 1px solid $primary;
-  }
 }
 
-a:hover, a:active {
+a:hover, a:focus, a:active {
 
 }
 
