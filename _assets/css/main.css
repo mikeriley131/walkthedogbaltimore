@@ -1,4 +1,4 @@
-/* toxic-pop-records v3.0.0 - 2016-06-10 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* toxic-pop-records v3.0.0 - 2016-06-13 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
 /* ===========================================================================
 ==== INCLUDED FONTS
@@ -700,6 +700,11 @@ h1, h2, h3, h4 {
   line-height: 1;
 }
 
+blockquote {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   color: #222;
   text-decoration: none;
@@ -745,41 +750,76 @@ ul, ol {
   overflow: auto;
   padding: 1em;
 }
+@media screen and (min-width: 45em) {
+  .main {
+    padding-top: 2em;
+  }
+}
 
-.column {
+.tagline {
+  color: #e888ba;
+  line-height: 1.25;
+  margin: .5em auto 0;
+  font-size: 2em;
+  text-align: center;
+}
+@media screen and (min-width: 45em) {
+  .tagline {
+    font-size: 2.5em;
+    max-width: 20em;
+  }
+}
+
+.intro-copy {
+  font-size: 1.25em;
+  margin: 0 auto 2em;
+}
+@media screen and (min-width: 45em) {
+  .intro-copy {
+    margin-bottom: 3em;
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 60em) {
+  .intro-copy {
+    max-width: 35em;
+  }
+}
+
+.group {
   margin-bottom: 2em;
   text-align: center;
   width: 100%;
 }
 @media screen and (min-width: 45em) {
-  .column {
+  .group {
     float: left;
     width: 33.33333%;
   }
 }
-.column h1 {
+.group h2 {
   border-bottom: 4px solid #e888ba;
   margin: 0 auto;
   margin-bottom: .5em;
   width: 50%;
 }
 @media screen and (min-width: 30em) {
-  .column h1 {
+  .group h2 {
     width: 33%;
   }
 }
 @media screen and (min-width: 45em) {
-  .column h1 {
+  .group h2 {
     width: 75%;
   }
 }
 @media screen and (min-width: 60em) {
-  .column h1 {
+  .group h2 {
     width: 66%;
   }
 }
 @media screen and (min-width: 75em) {
-  .column h1 {
+  .group h2 {
     width: 45%;
   }
 }
@@ -842,7 +882,7 @@ ul, ol {
   padding: 1em;
   text-align: center;
 }
-.footer p {
+.footer p:last-of-type {
   margin-bottom: 0;
 }
 

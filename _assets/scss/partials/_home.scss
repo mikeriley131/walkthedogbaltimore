@@ -5,9 +5,40 @@
   background: $background;
   overflow: auto;
   padding: 1em;
+
+  @include brk-med {
+    padding-top: 2em;
+  }
 }
 
-.column {
+.tagline {
+  color: $primary;
+  line-height: 1.25;
+  margin: .5em auto 0;
+  font-size: 2em;
+  text-align: center;
+
+  @include brk-med {
+    font-size: 2.5em;
+    max-width: 20em;
+  }
+}
+
+.intro-copy {
+  font-size: 1.25em;
+  margin: 0 auto 2em;
+
+  @include brk-med {
+    margin-bottom: 3em;
+    max-width: 80%;
+  }
+
+  @include brk-large {
+    max-width: 35em;
+  }
+}
+
+.group {
   margin-bottom: 2em;
   text-align: center;
   width: 100%;
@@ -17,7 +48,7 @@
     width: 33.33333%;
   }
 
-  h1 {
+  h2 {
     border-bottom: 4px solid #e888ba;
     margin: 0 auto;
     margin-bottom: .5em;
