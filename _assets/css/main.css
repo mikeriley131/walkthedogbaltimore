@@ -1,4 +1,4 @@
-/* toxic-pop-records v3.0.0 - 2016-06-13 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* toxic-pop-records v3.0.0 - 2016-06-15 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
 /* ===========================================================================
 ==== INCLUDED FONTS
@@ -727,7 +727,7 @@ ul, ol {
   content: "";
   background: #eee;
   background: url("../images/baltimore-map.jpg") center no-repeat;
-  opacity: 0.25;
+  opacity: 0.15;
   top: 0;
   left: 0;
   bottom: 0;
