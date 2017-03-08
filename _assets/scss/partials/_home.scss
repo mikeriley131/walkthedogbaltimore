@@ -45,6 +45,7 @@
 
   @include brk-med {
     float: left;
+    padding: 0 1em;
     width: 33.33333%;
   }
 
@@ -118,5 +119,24 @@
 
   &:hover {
     border-bottom: 1px solid $primary;
+
+  @include brk-large {
+    padding: 0 2em;
+  }
+
+  h1 {
+    border-bottom: 4px solid $primary;
+    display: inline-block;
+    margin-bottom: .25em;
+  }
+
+  li {
+    display: inline-block;
+
+    &:after {
+      content: "\00B7";
+      padding-left: 1em;
+      padding-right: .75em;
+    }
   }
 }
