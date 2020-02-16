@@ -1,4 +1,4 @@
-/* toxic-pop-records v3.0.0 - 2016-06-15 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
+/* walkthedogbaltimore v3.0.0 - 2020-02-15-21-11 - Written by Mike Riley (pyrographicdesign AT gmail DOT com) */
 
 /* ===========================================================================
 ==== INCLUDED FONTS
@@ -141,14 +141,6 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-mark {
-  background: #ff0;
-  color: #000;
 }
 
 /**
@@ -305,95 +297,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-input {
-  line-height: normal;
-}
-
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
- */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  box-sizing: content-box;
-  /* 2 */
-}
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Define consistent border, margin, and padding.
- */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-optgroup {
-  font-weight: bold;
-}
-
 /* Tables
    ========================================================================== */
 /**
@@ -432,10 +335,6 @@ html {
  * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
 
 ::selection {
   background: #b3d4fc;
@@ -497,7 +396,7 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, p {
   margin-top: 0;
 }
 
@@ -521,14 +420,6 @@ li {
 dl {
   margin: 0;
   padding: 0 0 1em 0;
-}
-
-pre {
-  margin: 0;
-}
-
-code {
-  background: #eee;
 }
 
 /* ==========================================================================
@@ -692,8 +583,10 @@ code {
 ==== GLOBAL ELEMENTS
 ============================================================================== */
 body {
-  background: #eee;
+  background: #fdfdfd;
   font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  padding: 0 .5em;
 }
 
 h1, h2, h3, h4 {
@@ -725,7 +618,7 @@ ul, ol {
 }
 .header:after {
   content: "";
-  background: #eee;
+  background: #fdfdfd;
   background: url("../images/baltimore-map.jpg") center no-repeat;
   opacity: 0.15;
   top: 0;
@@ -746,7 +639,7 @@ ul, ol {
 ==== HOME PAGE STYLES
 ============================================================================== */
 .main {
-  background: #f1d3e4;
+  background: #fff5fb;
   overflow: auto;
   padding: 1em;
 }
@@ -757,7 +650,7 @@ ul, ol {
 }
 
 .tagline {
-  color: #e888ba;
+  color: #de4595;
   line-height: 1.25;
   margin: .5em auto 0;
   font-size: 2em;
@@ -794,11 +687,12 @@ ul, ol {
 @media screen and (min-width: 45em) {
   .group {
     float: left;
-    width: 33.33333%;
+    padding: 0 1em;
+    width: 50%;
   }
 }
 .group h2 {
-  border-bottom: 4px solid #e888ba;
+  border-bottom: 4px solid #de4595;
   margin: 0 auto;
   margin-bottom: .5em;
   width: 50%;
@@ -825,18 +719,16 @@ ul, ol {
 }
 
 .cta-link {
-  background: #e888ba;
-  border: 3px solid #e888ba;
+  background: #de4595;
+  border: 3px solid #de4595;
   color: #fff;
   display: inline-block;
   margin-bottom: 1em;
   padding: .25em .5em;
   position: relative;
   text-transform: uppercase;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-transition: border-color 0.3s 0.2s;
-          transition: border-color 0.3s 0.2s;
+  transition: border-color 0.3s 0.2s;
   z-index: 1;
 }
 .cta-link:after {
@@ -846,7 +738,6 @@ ul, ol {
   left: 0;
   position: absolute;
   top: 0;
-  -webkit-transition: width 0.3s;
   transition: width 0.3s;
   width: 0;
   z-index: -1;
@@ -861,11 +752,24 @@ ul, ol {
 }
 
 .text-link {
-  border-bottom: 1px dotted #e888ba;
-  color: #e888ba;
+  border-bottom: 1px dotted #de4595;
+  color: #de4595;
 }
 .text-link:hover {
-  border-bottom: 1px solid #e888ba;
+  border-bottom: 1px solid #de4595;
+}
+.text-link h1 {
+  border-bottom: 4px solid #de4595;
+  display: inline-block;
+  margin-bottom: .25em;
+}
+.text-link li {
+  display: inline-block;
+}
+.text-link li:after {
+  content: "\00B7";
+  padding-left: 1em;
+  padding-right: .75em;
 }
 
 /* ===========================================================================
@@ -878,7 +782,7 @@ ul, ol {
 ==== FOOTER
 ============================================================================== */
 .footer {
-  background: #eee;
+  background: #fdfdfd;
   padding: 1em;
   text-align: center;
 }

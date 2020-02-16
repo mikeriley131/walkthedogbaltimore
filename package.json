@@ -1,28 +1,18 @@
 {
-  "name": "toxic-pop-records",
+  "name": "walkthedogbaltimore",
   "version": "3.0.0",
   "author": "Mike Riley",
   "contact": "pyrographicdesign AT gmail DOT com",
-  "license": "MIT",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^3.0.3",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-sass": "^0.8.1",
-    "grunt-contrib-uglify": "^0.5.1",
-    "grunt-contrib-watch": "^0.6.1"
-  },
-  "css": {
-    "_assets/css/main.min.css": [
-      "bower_components/normalize-css/normalize.css",
-      "bower_components/Gridlock/fs.gridlock.css",
-      "_assets/css/main.css"
-    ]
-  },
-  "js": {
-    "_assets/js/main.min.js": [
-      "bower_components/jquery/dist/jquery.min.js",
-      "_assets/js/jssor.slider.min.js",
-      "_assets/js/main.js"
-    ]
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass-lint": "^0.2.2",
+    "grunt-svgo": "^0.1.0",
+    "time-grunt": "^1.3.0"
   }
 }

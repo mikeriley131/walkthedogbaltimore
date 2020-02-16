@@ -46,11 +46,11 @@
   @include brk-med {
     float: left;
     padding: 0 1em;
-    width: 33.33333%;
+    width: 50%;
   }
 
   h2 {
-    border-bottom: 4px solid #e888ba;
+    border-bottom: 4px solid $primary;
     margin: 0 auto;
     margin-bottom: .5em;
     width: 50%;
@@ -76,7 +76,7 @@
 .cta-link {
   background: $primary;
   border: 3px solid $primary;
-  color: #fff;
+  color: $white;
   display: inline-block;
   margin-bottom: 1em;
   padding: .25em .5em;
@@ -89,7 +89,7 @@
   z-index: 1;
 
   &:after {
-    background: #fff;
+    background: $white;
     content: '';
     height: 100%;
     left: 0;
@@ -104,7 +104,7 @@
 
   &:hover, &:focus, &:active {
     background: none;
-    border-color: #fff;
+    border-color: $white;
     color: $grey-dark;
 
     &:after {
@@ -119,9 +119,6 @@
 
   &:hover {
     border-bottom: 1px solid $primary;
-
-  @include brk-large {
-    padding: 0 2em;
   }
 
   h1 {

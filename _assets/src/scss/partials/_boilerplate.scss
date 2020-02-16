@@ -12,7 +12,7 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  color: $text;
   font-size: 100%; // Set to browser default and then use ems when declaring your various font-sizes. (MR)
   line-height: 1.618; // Golden Ratio, arguably optimal line-height. (MR)
 }
@@ -26,12 +26,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #b3d4fc;
+  background: $selection;
   text-shadow: none;
 }
 
 ::selection {
-  background: #b3d4fc;
+  background: $selection;
   text-shadow: none;
 }
 
@@ -94,7 +94,7 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2, h3,h4 ,h5, h6, p {
+h1, h2, h3, p {
   margin-top: 0; // Only set margins below primary text elements for more intuitive spacing.
 }
 
@@ -118,14 +118,6 @@ li {
 dl {
   margin: 0;
   padding: 0 0 1em 0;
-}
-
-pre {
-  margin: 0;
-}
-
-code {
-  background: #eee;
 }
 
 /* ==========================================================================
